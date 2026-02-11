@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { useStore } from '../store/useStore';
 import { ChefHat, Delete, User, Shield, Wallet, Utensils, ArrowLeft, ChevronRight, Check } from 'lucide-react';
 import { User as UserType } from '../types';
-import appLogo from '../logo.png';
+const appLogo = '/logo.png';
 
 const Login = () => {
   const { login, users, settings } = useStore();

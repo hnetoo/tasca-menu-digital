@@ -9,7 +9,7 @@ import {
 } from 'lucide-react';
 import { getAIWaiterRecommendation } from '../services/geminiService';
 import LazyImage from '../components/LazyImage';
-import appLogo from '../logo.png';
+const appLogo = '/logo.png';
 
 // Cache keys
 const CACHE_KEY_MENU = 'public_menu_data';

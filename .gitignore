@@ -20,3 +20,5 @@ Thumbs.db
 
 # Large files
 src-tauri/
+.vercel
+.env*.local

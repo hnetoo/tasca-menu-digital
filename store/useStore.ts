@@ -8,7 +8,7 @@ import { sqlMigrationService } from '../services/sqlMigrationService';
 import { databaseService } from '../services/databaseService';
 import { Table, Order, Dish, Customer, PaymentMethod, User, SystemSettings, Notification, MenuCategory, OrderType, Employee, AttendanceRecord, StockItem, Reservation, WorkShift, OrderItem, PermissionTemplate, AuditLog, PaymentMethodConfig } from '../types';
 import { MOCK_MENU, MOCK_TABLES, MOCK_CUSTOMERS, MOCK_USERS, MOCK_CATEGORIES, MOCK_STOCK, MOCK_RESERVATIONS } from '../constants';
-import defaultLogo from '../logo.png';
+const defaultLogo = '/logo.png';
 
 const syncChannel = new BroadcastChannel('vereda_state_sync');
 
