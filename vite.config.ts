@@ -26,6 +26,12 @@ export default defineConfig({
     minify: 'esbuild',
     sourcemap: false,
     outDir: 'dist',
-    emptyOutDir: true
+    emptyOutDir: true,
+    rollupOptions: {
+      input: {
+        main: './index.html',
+        'menu-digital': './public/menu-digital.html'
+      }
+    }
   }
 })
