@@ -52,6 +52,32 @@
         100% { transform: rotate(360deg); }
       }
     </style>
+    
+    <!-- React e ReactDOM via CDN como fallback -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#06b6d4',
+              background: '#070b14',
+              surface: '#111827',
+            },
+            boxShadow: {
+              'glow': '0 0 25px rgba(6, 182, 212, 0.4)',
+            }
+          },
+        },
+      }
+    </script>
+    
+    <!-- Fontes -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
   </head>
   <body>
     <div id="root">
@@ -61,6 +87,10 @@
       </div>
     </div>
     
-    <script type="module" src="/src/menu-digital.tsx"></script>
+    <!-- Debug para testar conexão -->
+  <script src="/debug-menu-digital.js"></script>
+  
+  <!-- Sistema standalone robusto -->
+  <script type="module" src="/menu-digital-standalone.js"></script>
   </body>
 </html>
