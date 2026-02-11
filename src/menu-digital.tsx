@@ -5,7 +5,16 @@ import PublicMenu from '../pages/PublicMenu.tsx'
 import '../index.css'
 
 // Menu Digital standalone - não requer autenticação
-ReactDOM.createRoot(document.getElementById('root')!).render(
+const root = ReactDOM.createRoot(document.getElementById('root')!)
+
+// Remover o loading existente antes de renderizar o React
+const loadingElement = document.querySelector('.loading')
+if (loadingElement) {
+  loadingElement.remove()
+}
+
+// Remover o loading e mostrar o conteúdo do React
+root.render(
   <React.StrictMode>
     <BrowserRouter basename="/menu-digital">
       <Routes>
