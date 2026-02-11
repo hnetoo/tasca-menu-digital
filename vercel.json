@@ -1,0 +1,7 @@
+{
+  "rewrites": [
+    { "source": "/menu-digital", "destination": "/index.html" },
+    { "source": "/menu-digital/(.*)", "destination": "/index.html" },
+    { "source": "/(.*)", "destination": "/index.html" }
+  ]
+}
